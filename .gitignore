@@ -1,0 +1,30 @@
+# dependencies
+apps/backend/node_modules/
+
+# env
+apps/backend/.env
+apps/backend/.env.*
+/.env
+/.env.*
+
+# logs
+logs/
+*.log
+
+# next.js
+apps/frontend/.next/
+apps/frontend/out/
+
+# build
+apps/frontend/build/
+
+# prisma
+apps/backend/prisma/migrations/
+apps/backend/.prisma/
+
+# os
+.DS_Store
+Thumbs.db
+
+# cache
+apps/frontend/.cache/
