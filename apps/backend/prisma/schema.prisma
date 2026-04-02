@@ -12,10 +12,14 @@ datasource db {
 }
 
 model User {
-  id         Int      @id @default(autoincrement())
-  email      String   @unique
-  password   String
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  id                  Int      @id @default(autoincrement())
+  email               String   @unique
+  password            String
+  refreshToken        String?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+  failedLoginAttempt  Int @default(0)
+  lastFailedLogin     DateTime?
+  lockedUntil         DateTime?
 }
 
